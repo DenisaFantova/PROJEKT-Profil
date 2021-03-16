@@ -2,6 +2,13 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;*/
+
+
+/*- **šířka** celého rámečku s profilem je **250px** (nebo 300px, pokud se ti to bude líbit víc)
+- **padding** mezi okrajem rámečku a obsahem uvnitř je **20px**/
+
 /*
 	BARVY
 	czechitas  #b92e81
@@ -16,4 +23,96 @@ html { box-sizing: border-box; }
 
 body {
 	background-color: #bdc3c7;
+	margin: 0;
+}
+
+.hlavicka {
+	position: relative;
+}
+
+.profil,
+.obsah,
+.foto {
+	width: 250px;
+}
+
+.logo {
+	position: absolute;
+	bottom: -20px;
+	right: 20px;
+	background-color: #b92e81;
+	border-radius: 50%;
+}
+
+
+.profil {
+	background-color: #31363b;
+	margin-left: 30px;
+	margin-top: 30px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.jmeno {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+}
+
+.obsah {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	color: #bdc3c7;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.odkazy {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+
+}
+
+.odkazy li {
+	list-style-type: none;
+	display: inline-block;
+	/*padding-top: 10px;
+	padding-bottom: 10px;*/
+
+}
+
+.odkazy a {
+	display: block;
+	color: #bdc3c7;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+.portfolio {
+	text-align: center;
+	border-top: 1px solid #3f464d;
+	border-bottom: 1px solid #3f464d;
+	width: 100%;
+	margin-top: 16px;
+	
+}
+
+.facebook,
+.twitter {
+	width: 50%;
+	text-align: center;
+}
+
+.facebook {
+	border-right: 1px solid #3f464d;
+}
+
+.facebook a:hover {
+	background-color: #3b5998;
+}
+
+.twitter a:hover {
+	background-color: #1da1f2;
 }
